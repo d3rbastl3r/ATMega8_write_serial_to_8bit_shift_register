@@ -53,7 +53,7 @@ int main(void) {
     clearRegister();
 
     while(1) {
-        for (uint8_t i=0; i<255; ++i) {
+        for (uint8_t i=0; i<=255; ++i) {
             // Push the data to show 0 to 9 and A to F on the eight segment display
             pushByteAndLatch(i);
             _delay_ms(300);
